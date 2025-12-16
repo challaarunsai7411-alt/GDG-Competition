@@ -22,9 +22,8 @@ The main goal of this project was to:
 
 ## 📷 Final Output
 Below are screenshots of the final output of the project:
+![Starting page](GDC competition/final output/Screenshot 2025-04-28 212942.png)
 
-![Home Page](GDC competition/final output/Screenshot 2025-04-28 212942.png)
-![About Section](images/about.png)
 
 ## 📂 Project Status
 ✅ Completed  
