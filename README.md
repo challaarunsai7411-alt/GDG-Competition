@@ -22,17 +22,12 @@ The main goal of this project was to:
 
 ## 📷 Final Output
 Below are screenshots of the final output of the project:
-![Starting page](GDC competition/final output/Screenshot 2025-04-28 212942.png)
+Starting page:
+<img width="1919" height="867" alt="Screenshot 2025-04-28 212942" src="https://github.com/user-attachments/assets/221d8a77-47c5-4467-95fc-62f37f30afb4" />
+
+About page: 
+<img width="1898" height="861" alt="Screenshot 2025-04-28 213003" src="https://github.com/user-attachments/assets/4f226be9-9e4a-46a2-94c3-3b2b3c44c217" />
 
 
-## 📂 Project Status
-✅ Completed  
-This project was developed as part of a learning experience and serves as a demonstration of my front-end development skills.
-
-## 🙌 Acknowledgements
-- Google Developer Group (GDG) Student Chapter  
-- Web Developer Bootcamp organizers  
-
----
 
 ⭐ If you like this project, feel free to star the repository!
