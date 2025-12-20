@@ -130,16 +130,24 @@
       </div>
       
       <div class="carousel-controls ms-5">
-        <button onclick="prevSlide()">Prev</button>
-        <button onclick="nextSlide()">Next</button>
+        <button onclick="prevSlide()" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+        <button onclick="nextSlide()" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
       </div>
       </div>
-      <div class="description" id="event-description">
+      <div class="description" id="event-description" aria-live="polite">
         <h2>Engineer's Day</h2>
         <p>Engineer's day organized by Google Devoloper's Group GNI</p>
       </div>
       
       <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            prevSlide();
+          } else if (event.key === 'ArrowRight') {
+            nextSlide();
+          }
+        });
+
         const images = document.querySelectorAll('.carousel img');
         const descriptions = [
           {
