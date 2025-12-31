@@ -3,3 +3,7 @@
 ## 2025-05-18 - Accessibility First
 **Learning:** This codebase lacked basic accessibility features like "Skip to main content" and unique IDs, which are fundamental for keyboard and screen reader users.
 **Action:** Always check for unique IDs and skip links in the observation phase.
+
+## 2025-05-19 - Safe External Links
+**Learning:** External links (`target="_blank"`) were missing both security attributes and screen reader context.
+**Action:** Automatically pair `target="_blank"` with `rel="noopener noreferrer"` and a visually hidden warning span.
