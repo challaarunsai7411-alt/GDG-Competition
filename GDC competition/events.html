@@ -130,11 +130,11 @@
       </div>
       
       <div class="carousel-controls ms-5">
-        <button onclick="prevSlide()">Prev</button>
-        <button onclick="nextSlide()">Next</button>
+        <button onclick="prevSlide()" aria-label="Previous slide">Prev</button>
+        <button onclick="nextSlide()" aria-label="Next slide">Next</button>
       </div>
       </div>
-      <div class="description" id="event-description">
+      <div class="description" id="event-description" aria-live="polite" aria-atomic="true">
         <h2>Engineer's Day</h2>
         <p>Engineer's day organized by Google Devoloper's Group GNI</p>
       </div>
@@ -162,9 +162,20 @@
           images.forEach((img, i) => {
             img.classList.toggle('active', i === index);
           });
-          const desc = descriptions[index];
+
+          let title, text;
+          if (descriptions[index]) {
+            title = descriptions[index].title;
+            text = descriptions[index].text;
+          } else {
+             // Palette: Fallback to image alt text for robust UX
+            const currentImg = images[index];
+            title = currentImg.getAttribute('alt') || "Event";
+            text = "Details coming soon for " + title;
+          }
+
           const descDiv = document.getElementById('event-description');
-          descDiv.innerHTML = `<h2>${desc.title}</h2><p>${desc.text}</p>`;
+          descDiv.innerHTML = `<h2>${title}</h2><p>${text}</p>`;
         }
       
         function prevSlide() {
